@@ -1,0 +1,540 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    font-family: 'NanumSquareNeo';
+    font-size: 14px;
+    line-height: 24px;
+    color: #000;
+    min-width: 1320px;
+}
+
+/* 헤더 */
+.box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 1320px;
+    border-bottom: 1px solid #bbb;
+    z-index: 100;
+}
+
+header {
+    width: 1320px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+
+.logo {
+    display: block;
+    margin: 20px 0;
+}
+
+.top {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.search {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 40px;
+}
+
+.search input {
+    outline: 0;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    display: inline-block;
+    padding: 5px;
+}
+
+.search input::placeholder {
+    color: #fff;
+}
+
+/* 메뉴 */
+.nav {
+    width: 1320px;
+    margin: auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav> li> a{
+    padding: 20px;
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+}
+.nav> li:hover> a{
+    color: #fff;
+}
+
+
+/* 서브 */
+.sub{
+    position: absolute;
+    width: 100%;
+    background-color: rgba(10, 37, 62, 0.3);
+    left: 0;
+    padding: 20px 0;
+    display: none;
+}
+.sub_in{
+    width: 1320px;
+    margin: auto;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.sub_in ul{
+    
+    text-align: center
+}
+.sub_in ul:nth-child(1){
+    width: 125.33px;
+    margin-right: 286px;
+}
+.sub_in ul li a{
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.sh{
+    margin-left: 300px;
+}
+.sub_in ul li a:hover{
+    text-decoration: underline;
+}
+.nav li:hover .sub{
+    display: block;
+}
+
+/* 배너 */
+.banner {
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.slide .swiper-slide a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.slide .swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+@keyframes top {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-30px);
+    }
+}
+
+
+.Bubble {
+    width: 1320px;
+    margin: auto;
+    position: relative;
+}
+
+.Bubble1 {
+    position: absolute;
+    left: -300px;
+    top: -230px;
+    z-index: 10;
+    animation: top 2s linear infinite alternate;
+}
+
+.Bubble2 {
+    position: absolute;
+    left: -370px;
+    top: -200px;
+    z-index: 10;
+    animation: top 1.5s linear infinite alternate;
+}
+
+.Bubble3 {
+    position: absolute;
+    right: -200px;
+    top: -230px;
+    z-index: 10;
+    animation: top 1.5s linear infinite alternate;
+}
+
+.Bubble4 {
+    position: absolute;
+    right: -380px;
+    top: -285px;
+    z-index: 10;
+    animation: top 2s linear infinite alternate;
+}
+
+
+/* best */
+.best {
+    height: 1042px;
+    background: url(../images/bg4.png) no-repeat center top;
+    text-align: center;
+    margin-top: 100px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.best_in {
+    width: 1320px;
+    margin: auto;
+    position: relative;
+}
+
+.best_in h2 {
+    margin: 86px 0 30px;
+}
+
+/* 슬라이드배너 꾸미기 */
+.slide2 {
+    width: 100%;
+    height: 602px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 135px;
+    border-radius: 54px;
+    box-shadow: 15px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.slide2 .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* 블릿버튼 크기, 색상, 투명도 */
+.slide2 .swiper-pagination-bullet {
+    background: pink;
+    width: 10px;
+    height: 10px;
+    opacity: 0.5;
+}
+
+/* 블릿버튼 페이지 표시날 때 투명도 */
+.slide2 .swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+/* 블릿버튼 위치 */
+.slide2 .swiper-horizontal>.swiper-pagination-bullets,
+.slide2 .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 0px;
+}
+
+.bestimg {
+    width: 60%;
+}
+.dog{
+    background-color: #FFD2D2;
+    height: 100%;
+    width: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px; 
+    box-sizing: border-box;
+}
+
+/* 플라워애니메이션 */
+@keyframes f1 {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.f1 {
+    position: absolute;
+    right: -100px;
+    top: -30px;
+    animation: f1 18s infinite;
+}
+
+@keyframes f2 {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(15deg);
+    }
+}
+
+.f2 {
+    position: absolute;
+    left: -200px;
+    top: 480px;
+    animation: f2 2s infinite alternate;
+    transform-origin: 50% bottom;
+}
+
+.f3 {
+    position: absolute;
+    left: -130px;
+    top: 485px;
+    animation: f2 2s infinite alternate;
+    transform-origin: 50% bottom;
+}
+
+.f4 {
+    position: absolute;
+    right: -130px;
+    top: 600px;
+    animation: f2 2s infinite alternate;
+    transform-origin: 50% bottom;
+}
+
+.f5 {
+    position: absolute;
+    right: -210px;
+    top: 580px;
+    animation: f2 2s infinite alternate;
+    transform-origin: 50% bottom;
+}
+
+/* 아이템 */
+.item {
+    padding: 100px 0;
+}
+
+.item_in {
+    width: 1320px;
+    margin: auto;
+    text-align: center;
+}
+.itembox{
+    border-radius: 25px;
+}
+
+.item_in h2 {
+    margin: 100px;
+}
+
+
+
+.item_in ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+}
+
+.itembox h4 {
+    background-color: #FFC8C8;
+    display: inline-block;
+    padding: 0 5px;
+    color: #fff;
+    margin-top: 30px;
+}
+
+.box_img{
+    overflow: hidden;
+    transition: all 1s;
+}
+
+.box_img:hover{
+    background-color: #000;
+}
+.box_img:hover img{
+    opacity: 0.8;
+    transform: scale(1.2);
+}
+.box_img img{
+    display: block;
+    transition: all 1s;
+}
+
+/* 버튼 */
+.right {
+    display: inline-block;
+    /* 글자만큼 차지 */
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    margin-top: 150px;
+}
+
+.right:hover {
+    background-color: #ccc;
+    color: #fff;
+}
+
+/* 뉴 */
+.new{
+    
+}
+.new h2{
+    margin-bottom: 100px;
+    text-align: center;
+}
+.new_bg{
+    background: url(../images/main_benner.png) no-repeat center top;
+}
+.new_in{
+    margin: auto;
+    width: 1200px;
+    height: 388px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.new_text{
+    width: 330px;
+}
+.new_text h3{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* 메인 배너 */
+
+.main_banner h2{
+    text-align: center;
+    margin: 100px 0;
+}
+.main_in{
+    width: 1320px;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.main4{
+    width: 640px;
+}
+.main4 img{
+    display: block;
+} 
+.main4 img:nth-child(1){
+    margin-bottom: 35px;
+}
+.main_ani {
+    position: absolute;
+    left: -50px;
+    top: -50px;
+    animation: f2 2s infinite alternate;
+    transform-origin: 50% bottom;
+}
+
+.bg5{
+    overflow: hidden;
+    position: relative;
+    margin: 50px 0;
+}
+.bg5 img{
+    width: 100%;
+    display: block;
+}
+.photo{
+    position: absolute;
+    right: 230px;
+    top: 4350px;
+}
+
+/* 푸터 */
+footer{
+    background-color: #FEF2F2;
+    padding: 30px 0;
+    
+    
+}
+.footer_in{
+    width: 1000px;
+    margin: auto;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #ccc;
+    align-items: center;
+    justify-content: space-between;
+}

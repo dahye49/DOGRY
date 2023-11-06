@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    font-family: 'NanumSquareNeo';
+    font-size: 14px;
+    line-height: 24px;
+    color: #000;
+    min-width: 1320px;
+}
+
+/* 헤더 */
+.box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 1320px;
+    border-bottom: 1px solid #bbb;
+    z-index: 100;
+}
+
+header {
+    width: 1320px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+
+.logo {
+    display: block;
+    margin: 20px 0;
+}
+
+.top {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.search {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 40px;
+}
+
+.search input {
+    outline: 0;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    display: inline-block;
+    padding: 5px;
+}
+
+.search input::placeholder {
+    color: #fff;
+}
+.item {
+        padding: 100px 0;
+    }
+.item_in {
+    width: 1320px;
+    margin: auto;
+    text-align: center;
+}
+
+.item_in h2 {
+    margin: 100px;
+}
+
+h2 span {}
+
+.item_in ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box_img {
+    width: 283px;
+    height: 301px;
+    border-radius: 25px;
+    box-shadow: 4px 3px 18px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.box_img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.itembox h4 {
+    background-color: #FFC8C8;
+    display: inline-block;
+    padding: 0 5px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* 메인소개 */
+.nav {
+    width: 1320px;
+    margin: auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav>li>a {
+    padding: 20px;
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.nav>li:hover>a {
+    color: #fff;
+}
+
+/* 서브 */
+.sub {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(10, 37, 62, 0.3);
+    left: 0;
+    padding: 20px 0;
+    display: none;
+}
+
+.sub_in {
+    width: 1320px;
+    margin: auto;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.sub_in ul {
+
+    text-align: center
+}
+
+.sub_in ul:nth-child(1) {
+    width: 125.33px;
+    margin-right: 286px;
+}
+
+.sub_in ul li a {
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.sh {
+    margin-left: 300px;
+}
+
+.sub_in ul li a:hover {
+    text-decoration: underline;
+}
+
+.nav li:hover .sub {
+    display: block;
+}
+
+
+/* 메인 */
+.banner_1 {
+    background: url(./images/sub1_banner.png) no-repeat center top;
+    height: 875px;
+    overflow: hidden;
+}
+
+.dog_in {
+    width: 1320px;
+    margin: auto;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 400px 0 0 500px;
+    position: relative;
+}
+.dog_in h1{
+    margin-bottom: 20px;
+}
+
+.main_ani {
+    position: absolute;
+    bottom: -261px;
+    right: 0;
+    animation:ani 2s infinite alternate;
+    transform: rotate(15deg);
+    transform-origin: 50% bottom;
+}
+
+@keyframes ani{
+    0%{transform: rotate(15deg);}
+    100%{transform: rotate(15deg) translate(-50px, -25px);}
+}
+
+/* 서브소개 */
+.sub_text {
+    text-align: center;
+    margin: 100px 0;
+}
+
+.sub_brand {
+    text-align: center;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 1320px;
+    border: #ccc solid 1px;
+    margin: 0 auto 255px;
+    padding: 150px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about_in {
+    width: 1320px;
+    margin: auto;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about_in li {
+    margin-bottom: 255px;
+    width: 577px;
+    height: 710px;
+    box-shadow: 3px 3px 27px rgba(0, 0, 0, 0.16);
+    text-align: center;
+    position: relative;
+    padding: 500px 150px 0;
+    box-sizing: border-box;
+    border-radius: 66px;
+}
+
+.about_in li img:nth-child(1) {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    margin-left: calc(-486px / 2);
+}
+
+.about_in li img:nth-child(2) {
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    margin-left: calc(-571px / 2);
+}
+
+.about_in li {
+
+    transition: all 1s;
+}
+
+.about_in li:hover img:nth-child(2) {
+    transform: rotate(15deg);
+}
+
+.about_in li img {
+    display: block;
+    transition: all 1s;
+}
+
+.about_in li:hover img:nth-child(2).bg {
+    transform: rotate(-15deg);
+}
+
+/* 캠페인 */
+.campain {
+    text-align: center;
+    width: 1320px;
+    margin: 200px auto;
+    overflow: hidden;
+}
+
+.campain h2 {
+    margin-bottom: 100px;
+}
+
+.campain_in {
+    text-align: center;
+    padding: 100px;
+    box-sizing: border-box;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.campain_bg1 {
+    background-color: #E1EBFB;
+    border-radius: 87px 0 0 0;
+}
+
+.campain_bg2 {
+    background-color: #EDF6EF;
+    border-radius: 0 87px 0 0;
+}
+
+.campain_bg3 {
+    background-color: #FFF5E5;
+    border-radius: 87px 0 0 0;
+}
+
+.campain_in div {
+    width: 366px;
+}
+
+/* 푸터 */
+footer {
+    background-color: #FEF2F2;
+    padding: 30px 0;
+}
+
+.footer_in {
+    width: 1000px;
+    margin: auto;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #ccc;
+    align-items: center;
+    justify-content: space-between;
+}
